@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --main-bg: #181f2a;
+    --footer-bg: #0b1523;
+    --intro-bg: #1c2341;
+    --test-bg: #202a3c;
+    --cyan: #65e2d9;
+    --blue: #339ecc;
+    --red: #ff4242;
+    --white: #fff;
+}
+
+body{
+    background-color: var(--main-bg);
+}
