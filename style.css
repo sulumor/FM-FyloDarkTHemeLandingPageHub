@@ -21,10 +21,15 @@ body {
   text-align: center;
 }
 
-a,
 h1,
 h2 {
   font-family: "Raleway";
+}
+
+h2 {
+  margin: 2rem auto 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 img {
@@ -52,6 +57,7 @@ nav {
 
 .navImg {
   height: 70%;
+  width: 30vw;
   padding: 4px;
 }
 
@@ -60,9 +66,9 @@ nav {
 }
 
 .menu {
-  width: 40vw;
+  width: 50vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -108,4 +114,85 @@ h1::after {
   margin: 0;
   padding: 2rem;
   background-color: var(--main-bg);
+}
+.bottom button {
+  margin-top: 1rem;
+}
+
+/* FEATURES */
+.feature,
+#mainFeature {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.feature img {
+  width: 20%;
+}
+
+/* MAIN FEATURE */
+
+#mainFeature h2,
+#mainFeature p,
+.comment p {
+  text-align: left;
+}
+
+#mainFeature a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  width: fit-content;
+  color: var(--cyan);
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--cyan);
+}
+
+#mainFeature a img {
+  width: 1.1rem;
+  margin-left: 0.5rem;
+}
+
+/* COMMENTS */
+
+.comment {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding: 1.5rem 1rem;
+  background: var(--test-bg);
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.quotes {
+  position: absolute;
+  width: 1.5rem;
+  top: -1.3rem;
+  left: 0;
+}
+
+.profil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.avatar img {
+  border-radius: 100%;
+  width: 2rem;
+}
+
+.infos {
+  margin-left: 0.5rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.job {
+  font-size: 0.5rem;
 }
