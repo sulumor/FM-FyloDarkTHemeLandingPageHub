@@ -27,7 +27,6 @@ h2 {
 }
 
 h2 {
-  margin: 2rem auto 1rem;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -37,12 +36,21 @@ img {
   z-index: 20;
 }
 
-button {
-  width: 85%;
+button,
+input {
   height: 3rem;
+  border-radius: 50em;
+  width: 100%;
+}
+button {
   font-weight: bold;
   background-image: linear-gradient(90deg, var(--cyan), var(--blue));
-  border-radius: 50em;
+}
+
+input {
+  width: calc(100% - (1.5rem * 2));
+  padding: 0 1.5rem;
+  border: none;
 }
 
 /* NAV BAR */
@@ -126,16 +134,26 @@ h1::after {
   margin: 3rem auto;
 }
 
+.feature h2 {
+  margin: 2rem auto 1rem;
+}
 .feature img {
   width: 20%;
 }
 
 /* MAIN FEATURE */
+#mainFeature {
+  margin-bottom: 7rem;
+}
 
 #mainFeature h2,
 #mainFeature p,
 .comment p {
   text-align: left;
+}
+
+#mainFeature h2 {
+  margin: 2rem auto 1rem;
 }
 
 #mainFeature a {
@@ -195,4 +213,101 @@ h1::after {
 
 .job {
   font-size: 0.5rem;
+}
+
+/*SIGN IN */
+
+#signIn {
+  width: 90%;
+  margin: 10rem auto 0;
+  padding: 2rem 1.5rem;
+  background-color: var(--intro-bg);
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+#signIn input {
+  margin: 2rem 0;
+}
+
+#signIn::after {
+  content: "";
+  position: absolute;
+  background-color: var(--footer-bg);
+  bottom: 0;
+  left: -2rem;
+  z-index: -1;
+  width: 115%;
+  height: 50%;
+}
+
+/* FOOTER */
+
+#contacts,
+#footer,
+footer {
+  background-color: var(--footer-bg);
+}
+
+#contacts {
+  padding: 3rem 1rem;
+}
+
+.logo {
+  width: 100%;
+  text-align: start;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.contact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 1rem;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.contact p {
+  width: 90%;
+  text-align: start;
+}
+
+ul {
+  text-align: start;
+  padding: 0 0 2rem 1rem;
+}
+
+li {
+  padding-bottom: 0.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social > li {
+  padding: 0.4rem;
+  border: 1px solid var(--white);
+  border-radius: 9999999999px;
+  margin-right: 0.6rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
